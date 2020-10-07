@@ -1,0 +1,56 @@
+.icon {
+	width: 40px;
+	height: 40px;
+
+	&__img-burger {
+		vertical-align: middle;
+	}
+
+	&__img-call {
+		display: block;
+		background-image: url(../sourse/icon/image/call.svg);
+	}
+
+	&__img-chat {
+		display: block;
+		background-image: url(../sourse/icon/image/chat.svg);
+	}
+
+	&__img-profile {
+		display: block;
+		background-image: url(../sourse/icon/image/profile.svg);
+	}
+
+	&__img-repair {
+		display: block;
+		background-image: url(../sourse/icon/image/repair.svg);
+	}
+
+	&__img-checkstatus {
+		display: block;
+		background-image: url(../sourse/icon/image/checkstatus.svg);
+	}
+
+	&__img-search {
+		display: block;
+		background-image: url(../sourse/icon/image/search.svg);
+	}
+
+	&__img-cross {
+		display: block;
+		background-image: url(../sourse/icon/image/cross.svg);
+	}
+}
+.icon--avtive {
+	&:hover {
+		opacity: 0.6;
+		transform: scale(1.1);
+		transition: opacity, scale 1s, 1s;
+	}
+
+	&:active {
+		opacity: 1;
+		transform: scale(0.9);
+		transition: opacity, scale 0.1s, 0.1s;
+	}
+}

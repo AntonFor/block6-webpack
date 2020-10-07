@@ -1,0 +1,29 @@
+.button {
+	display: flex;
+   align-items: center;
+   border: none;
+	background-color: $color-main;
+	padding: 0;
+	cursor: pointer;
+
+	&:hover &__text {
+		color: $color-link-active;
+	}
+
+	&__icon {
+		background-image: url(../sourse/button/image/icon.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 24px;
+		height: 24px;
+		display: block;
+		margin-right: 8px;
+	}
+
+	&__text {
+		font-family: $font-medium;
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-text;
+	}
+}

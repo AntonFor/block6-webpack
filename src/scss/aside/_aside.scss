@@ -1,0 +1,51 @@
+.aside {
+	height: 232px;
+
+	@media (min-width:768px){
+		height: 170px;
+	}
+
+	@media (min-width:1120px){
+		height: 180px;
+	}
+
+	&__text {
+		font-family: $font-regular;
+		font-size: 14px;
+		line-height: 20px;
+		color: $color-text;
+		margin: 0 26px 20px 16px;
+
+		@media (min-width:768px){
+			width: 420px;
+			height: 60px;
+			margin: 24px 0 20px 24px;
+		}
+
+		@media (min-width:1120px){
+			margin: 32px 0 20px 32px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		margin: 0 16px 0 16px;
+		cursor: pointer;
+
+		@media (min-width:768px){
+			margin: 0 0 0 24px;
+		}
+
+		@media (min-width:1120px){
+			margin-left: 32px;
+		}
+	}
+
+	&__arrow {
+		display: inline-block;
+		width: 6px;
+		height: 10px;
+		background-image: url(../sourse/aside/image/line.svg);
+		margin-left: 7px;
+	}
+}

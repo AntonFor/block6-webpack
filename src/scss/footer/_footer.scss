@@ -1,0 +1,41 @@
+footer {
+	background-color: $color-main;
+	border-top: 2px solid $color-border-footer;
+	border-bottom: 1px solid $color-main;
+	padding: 0 16px;
+
+	@media (min-width:768px){
+		display: flex;
+		padding: 0 3%;
+	}
+}
+
+.footer {
+
+	&__text {
+		font-family: $font-medium;
+		font-size: 14px;
+		line-height: 16px;
+		color: $color-text-pale;
+		margin: 16px 0 0 0;
+		text-align: center;
+		flex-basis: 33.33%;
+
+		&:last-child {
+			margin-bottom: 19px;
+		}
+
+		@media (min-width:768px){
+			margin-top: 32px;
+
+			&:last-child {
+				margin-bottom: 25px;
+				text-align: right;
+			}
+
+			&:first-child {
+				text-align: left;
+			}
+		}
+	}
+}

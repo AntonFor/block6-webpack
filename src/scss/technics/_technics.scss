@@ -1,0 +1,99 @@
+.technics {
+
+	&__item {
+		max-width: 240px;
+		max-height: 160px;
+		background: $color-background-white;
+		border: 1px solid $color-item-border;
+		border-radius: 6px;
+		display: flex;
+		justify-content: space-between;
+
+		@media (min-width:768px){
+			max-width: 224px;
+			min-height: 160px;
+			margin: 0 0 24px 24px;
+		}
+
+		@media (min-width:1120px){
+			max-width: 240px;
+			margin: 0 0 24px 32px;
+		}
+	}
+
+	&__item--visibility {
+		display: none;
+	}
+
+	&__link {
+		margin: 16px;
+		display: flex;
+		justify-content: space-between;
+		text-decoration: none;
+		min-width: 206px;
+
+		@media (min-width:768px){
+			min-width: 190px;
+		}
+
+		@media (min-width:1120px){
+			min-width: 206px;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		font-family: $font-medium;
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-text;
+		align-self: flex-start;
+	}
+
+	&__arrow-icon {
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-image: url(../sourse/technics/image/go.svg);
+		align-self: flex-end;
+	}
+
+	&__show {
+		display: none;
+
+		@media (min-width:768px){
+			display: block;
+			margin: 8px 0 32px 24px;
+		}
+
+		@media (min-width:1120px){
+			display: block;
+			margin: 8px 0 50px 32px;
+		}
+	}
+}
+
+.swiper-container--technics {
+	width: 90%;
+	height: 228px;
+	
+	@media (min-width:768px){
+		width: 100%;
+		height: 100%;
+	}
+}
+.swiper-wrapper {
+	margin-top: 16px;
+
+	@media (min-width:768px){
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 24px;
+	}
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	background: $color-pagination;
+	width: 12px;
+	height: 12px;
+}

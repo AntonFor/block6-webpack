@@ -1,0 +1,143 @@
+.brand {
+
+	&__item {
+		max-width: 238px;
+		max-height: 70px;
+		background: $color-background-white;
+		border: 1px solid $color-item-border;
+		border-radius: 6px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (min-width:768px){
+			max-width: 222px;
+			min-height: 70px;
+			margin: 0 0 16px 24px;
+		}
+
+		@media (min-width:1120px){
+			max-width: 238px;
+			margin: 0 0 16px 32px;
+		}
+	}
+
+	&__item--visibility {
+		display: none;
+	}
+
+	&__link {
+		margin-left: 16px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 206px;
+
+		@media (min-width:768px){
+			min-width: 190px;
+		}
+
+		@media (min-width:1120px){
+			min-width: 206px;
+		}
+	}
+
+	&__logo {
+		display: block;
+	}
+
+	&__logo-lenovo {
+		width: 108px;
+		height: 32px;
+		background-image: url(../sourse/brand/image/lenovo.svg);
+	}
+
+	&__arrow-icon {
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-image: url(../sourse/brand/image/go.svg);
+	}
+
+	&__logo-samsung {
+		width: 116px;
+		height: 39px;
+		background-image: url(../sourse/brand/image/samsung.svg);
+	}
+
+	&__logo-apple {
+		width: 44px;
+		height: 44px;
+		background-image: url(../sourse/brand/image/apple.svg);
+	}
+
+	&__logo-sonic {
+		width: 128px;
+		height: 21px;
+		background-image: url(../sourse/brand/image/sonic.svg);
+	}
+
+	&__logo-bosch {
+		width: 128px;
+		height: 29px;
+		background-image: url(../sourse/brand/image/bosch.svg);
+	}
+
+	&__logo-hp {
+		width: 52px;
+		height: 52px;
+		background-image: url(../sourse/brand/image/hp.svg);
+	}
+
+	&__logo-acer {
+		width: 94px;
+		height: 24px;
+		background-image: url(../sourse/brand/image/acer.svg);
+	}
+
+	&__logo-sony {
+		width: 128px;
+		height: 26px;
+		background-image: url(../sourse/brand/image/sony.svg);
+	}
+
+	&__show {
+		display: none;
+
+		@media (min-width:768px){
+			display: block;
+			margin: 8px 0 32px 24px;
+		}
+
+		@media (min-width:1120px){
+			display: block;
+			margin: 8px 0 50px 32px;
+		}
+	}
+}
+
+.swiper-container--brand {
+	width: 90%;
+	height: 140px;
+	
+	@media (min-width:768px){
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.swiper-wrapper {
+	margin-top: 16px;
+
+	@media (min-width:768px){
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 24px;
+	}
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	background: $color-pagination;
+	width: 12px;
+	height: 12px;
+}

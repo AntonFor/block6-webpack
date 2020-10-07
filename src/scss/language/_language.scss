@@ -1,0 +1,24 @@
+.language {
+	margin: 8px 0 32px 16px;
+	word-spacing: 7px;
+
+	@media (min-width:768px){
+		margin: 40px 0 32px 24px;
+	}
+
+	&__link {
+		font-family: $font-medium;
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-text;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-text-pale;
+		}
+
+		&:first-child {
+			color: $color-text-pale;
+		}
+	}
+}

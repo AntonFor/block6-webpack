@@ -1,0 +1,158 @@
+.services {
+
+	&__item {
+		max-width: 258px;
+		max-height: 198px;
+		background: $color-background-white;
+		border: 1px solid $color-background-white;
+		border-radius: 6px;
+
+		@media (min-width:768px){
+			display: flex;
+			align-items: center;
+			max-width: 95%;
+			min-height: 64px;
+			margin: 0 auto;
+			border-bottom: 1px solid $color-divider;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&__item--visibility {
+		display: none;
+
+		@media (min-width:768px){
+			display: flex;
+			max-width: 100%;
+			background-color: $color-main;
+			border: none;
+		}
+	}
+
+	&__type {
+		margin: 16px 0 0 16px;
+
+		@media (min-width:768px){
+			margin: 0;
+			flex-basis: 53%;
+		}
+	}
+
+	&__type--margin {
+		margin-left: 2.5%;
+		flex-basis: 50%;
+	}
+
+	&__title {
+		font-family: $font-medium;
+		font-size: 14px;
+		line-height: 16px;
+		color: $color-text-pale;
+
+		@media (min-width:768px){
+			display: none;
+		}
+	}
+
+	&__title-heading {
+		font-family: $font-medium;
+		font-size: 14px;
+		line-height: 16px;
+		color: $color-text-pale;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: $font-medium;
+		font-size: 14px;
+		line-height: 18px;
+		color: $color-text;
+	}
+
+	&__price {
+		margin: 16px 0 0 16px;
+
+		@media (min-width:768px){
+			margin: 0;
+			flex-basis: 15%;
+		}
+	}
+
+	&__order {
+		margin: 16px 0 16px 16px;
+		display: flex;
+		justify-content: space-between;
+		height: 44px;
+
+		@media (min-width:768px){
+			height: auto;
+			margin: 0;
+			flex-basis: 32%;
+		}
+	}
+
+	&__period {
+		align-self: flex-start;
+
+		@media (min-width:768px){
+			align-self: center;
+		}
+	}
+
+	&__link {
+		font-family: $font-bold;
+		font-size: 12px;
+		line-height: 24px;
+		color: $color-background-white;
+		background-color: $color-background-order;
+		padding: 4px 16px 4px 12px;
+		margin-right: 16px;
+		border-radius: 100px;
+		align-self: flex-end;
+		cursor: pointer;
+
+		@media (min-width:768px){
+			align-self: center;
+			margin-right: 0;
+		}
+	}
+
+	&__arrow {
+		display: inline-block;
+		width: 7px;
+		height: 10px;
+		background-image: url(../sourse/services/image/dropdown.svg);
+		margin-left: 16px;
+	}
+}
+
+.swiper-container--services {
+	width: 90%;
+	height: 260px;
+
+	@media (min-width:768px){
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.swiper-wrapper {
+	margin-top: 16px;
+}
+
+.swiper-wrapper--services {
+	@media (min-width:768px){
+		max-width: 94%;
+		margin: 0 auto;
+		background-color: $color-background-white;
+	}
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	background: $color-pagination;
+	width: 12px;
+	height: 12px;
+}

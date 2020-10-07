@@ -1,0 +1,98 @@
+.menu {
+	display: flex;
+	padding: 19px 0;
+
+	@media (min-width:1120px){
+		display: none;
+	}
+
+	&__memu-left {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+	}
+
+	&__icon-burger {
+		margin: 0 16px 0 16px;
+		border-radius: 50%;
+		padding: 0px;
+		border: 0px;
+		cursor: pointer;
+
+		@media (min-width:768px){
+			margin: 0 0 0 24px;
+		}
+	}
+
+	&__divider {
+		width: 0px;
+		height: 32px;
+		border: 1px solid $color-divider;
+		background-color: $color-divider;
+		border-radius: 1px;
+		margin: 0 20px 0 20px;
+	}
+
+	&__divider--visibility {
+		display: none;
+
+		@media (min-width:768px){
+			display: block;
+		}
+	}
+
+	&__link-logo {
+		display: block;
+	}
+
+	&__img-logo {
+		width: 100px;
+		height: 50px;
+		display: block;
+		background-image: url(../sourse/menu/image/group.svg);
+		background-repeat: no-repeat;
+	}
+
+	&__menu-center {
+		display: none;
+
+		@media (min-width:768px){
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__link-call {
+		display: block;
+		margin-right: 16px;
+	}
+
+	&__link-chat {
+		display: block;
+		margin-right: 16px;
+	}
+
+	&__link-profile {
+		display: block;
+	}
+
+	&__menu-right {
+		display: flex;
+		align-items: center;
+		
+	}
+
+	&__link-repair {
+		display: block;
+		margin-right: 16px;
+	}
+	
+	&__link-checkstatus {
+		display: block;
+		margin-right: 16px;
+
+		@media (min-width:768px){
+			margin-right: 24px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.link {
+	font-family: $font-medium;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	color: $color-text;
+}
+
+.link--active:hover {
+	color: $color-link-active;
+}

@@ -1,0 +1,74 @@
+@font-face {
+	font-family: ttlakes-regular;
+	src: url(../fonts/ttlakes-regular.ttf)
+}
+
+@font-face {
+	font-family: ttlakes-medium;
+	src: url(../fonts/ttlakes-medium.ttf)
+}
+
+@font-face {
+	font-family: ttlakes-bold;
+	src: url(../fonts/ttlakes-bold.ttf)
+}
+
+@import "variables";
+
+body {
+	margin: 0 auto;
+	max-width: 1440px;
+	position: relative;
+
+	@media (min-width:1120px){
+		display: flex;
+		border: 3px solid $color-main;
+	}
+}
+
+main {
+	background-color: $color-main;
+	border-top: 1px solid $color-main;
+}
+
+@import "menu/menu";
+
+@import "icon/icon";
+
+@import "heading/heading";
+
+@import "link/link";
+
+@import "nav/nav";
+
+@import "section/section";
+
+@import "title/title";
+
+@import "brand/brand";
+
+@import "button/button";
+
+@import "technics/technics";
+
+@import "services/services";
+
+@import "aside/aside";
+
+@import "footer/footer";
+
+@import "newmenu/newmenu";
+
+@import "newnav/newnav";
+
+@import "contact/contact";
+
+@import "language/language";
+
+@import "burger/container";
+
+@import "feedback/feedback";
+
+@import "form/form";
+
+@import "call/call";
