@@ -1,6 +1,3 @@
-import '../scss/style.scss';
-import '../css/swiper-bundle.min.css';
-
 const slider = document.querySelector('.swiper-container--brand');
 var button = document.querySelector('.brand__button');
 var item = document.querySelector('.swiper-wrapper--brand').children;
@@ -466,3 +463,4 @@ function addItemsTech () {
 }
 
 addItemsTech();
+
